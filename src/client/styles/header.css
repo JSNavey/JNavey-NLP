@@ -1,6 +1,27 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 25px 80px;
 }
 
+.logo {
+    font-size: 36px;
+    padding-left: 15px;
+    font-family: "Bacasime Antique", serif;
+    text-align: center;
+}
+
+.sub-logo {
+    font-size: 18px;
+}
+
+.nav {
+    width: 35%;
+    height: 32px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
