@@ -4,12 +4,14 @@
         <meta charset="utf-8">
         <title>Evaluate a News Article</title>
         
+        <!--
         <link rel="stylesheet" href="../styles/resets.scss">
         <link rel="stylesheet" href="../styles/base.scss">
         <link rel="stylesheet" href="../styles/header.scss">
         <link rel="stylesheet" href="../styles/form.scss">
         <link rel="stylesheet" href="../styles/footer.scss">
-        
+        -->
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Inter:wght@400;600&display=swap" rel="stylesheet">
@@ -37,9 +39,9 @@
                 <p>Enter a news article url here to find out the hidden information behind the text.</p>
             </section>
             <section>
-                <form class="" onsubmit="return handleSubmit(event)">
-                    <input id="name" type="text" name="input" value="" onblur="onBlur()" placeholder="Enter an url here.">
-                    <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <form class="" onsubmit="return Client.handleSubmit(event)">
+                    <input id="name" type="text" name="input" value="" onblur="" placeholder="Enter an url here.">
+                    <input type="submit" name="" value="submit" onclick="return Client.handleSubmit(event)" onsubmit="return Client.handleSubmit(event)">
                 </form>
             </section>
 

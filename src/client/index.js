@@ -10,5 +10,10 @@ import "./styles/form.scss"
 import "./styles/header.scss"
 import "./styles/resets.scss"
 
+export {
+    checkForName,
+    handleSubmit
+}
+
 alert("I EXIST")
 console.log("CHANGE!!");
