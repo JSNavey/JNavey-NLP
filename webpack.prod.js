@@ -12,6 +12,9 @@ module.exports = {
         libraryTarget: "var",
         library: "Client"
     },
+    optimization: {
+        minimizer: [new TerserWebpackPlugin({}), new CssMinimizerWebpackPlugin({})]
+    },
     module: {
         rules: [
                 {
@@ -21,7 +24,7 @@ module.exports = {
                 },
                 {
                     test: /\.scss$/,
-                    use: [ "style-loader", "css-loader", "sass-loader" ]
+                    use: [ MiniCssExtractPlugin.loader, "css-loader", "sass-loader" ]
                 }
             ]
     },
@@ -29,6 +32,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: "./src/client/views/index.html",
             filename: "./index.html"
+        }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css"
         })
     ]
 }
